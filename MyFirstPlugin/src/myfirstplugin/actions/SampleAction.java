@@ -29,10 +29,12 @@ public class SampleAction implements IWorkbenchWindowActionDelegate {
 	 * @see IWorkbenchWindowActionDelegate#run
 	 */
 	public void run(IAction action) {
+		System.out.println("Hallo Console!"); 
 		MessageDialog.openInformation(
 			window.getShell(),
 			"MyFirstPlugin",
 			"Hello, ABAP in Eclipse");
+		
 	}
 
 	/**
@@ -51,6 +53,7 @@ public class SampleAction implements IWorkbenchWindowActionDelegate {
 	 * @see IWorkbenchWindowActionDelegate#dispose
 	 */
 	public void dispose() {
+		 
 	}
 
 	/**
